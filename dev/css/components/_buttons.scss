@@ -1,0 +1,49 @@
+.header__btn, .about__btn, .burger__btn{
+  display: block;
+  background-color: #FBCC0B;
+  color: black;
+  padding: 15px 20px;
+  border-radius: 8px;
+  width: fit-content;
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin: 10% 0;
+}
+.header__arrow {
+  display: block;
+  background-color: white;
+  padding: 20px 20px;
+  border-radius: 8px;
+  width: fit-content;
+  font-weight: 700;
+  font-size: 0.8rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin:10% 0 10% -25px;
+  i{
+    color: #20A471;
+  }
+}
+.nav__main__btn{
+  display: block;
+  background-color: #FBCC0B;
+  color: black;
+  padding: 15px 20px;
+  border-radius: 8px;
+  width: fit-content;
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin: 10% 0;
+}
+.about__btn, .burger__btn {
+  margin: 0;
+}
+.green__btn{
+  display: block;
+  background-color: #20A471;
+  color: black;
+  padding: 15px 20px;
+  border-radius: 8px;
+  width: fit-content;
+  font-weight: 700;
+  font-size: 0.8rem;
+}

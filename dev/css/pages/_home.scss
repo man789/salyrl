@@ -1,0 +1,150 @@
+.about{
+  .wrapper{
+    display: flex;
+    gap: 6rem;
+    margin-bottom: 20px;
+  }
+}
+.avantage{
+  background-color: #2D2D2D;
+}
+.about__title{
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+  width: 60%;
+  span {
+    color: #20A471;
+  }
+}
+.about__txt {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 2rem;
+  width: 80%;
+}
+.about__img{
+  position: relative;
+  width: 40%;
+  height: 100%;
+  align-self: flex-end;
+  margin-bottom: -40px;
+  z-index: 2;
+  img{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+    z-index: 2;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 30px;
+    left: 30px;
+    background-color: white;
+    z-index: 1;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
+.about__content{
+  width: 60%;
+  padding-left: 5%;
+}
+.about__content__img{
+  width: 25%;
+}
+.avantage{
+  padding-bottom: 5%;
+  color: white;
+  .wrapper{
+    display: flex;
+    gap: 3rem;
+  }
+}
+.avantage__box{
+  width: 90%;
+}
+.avantage__content, .avantage__img{
+  margin-top: 20%;
+  width: 50%;
+}
+.avantage__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+  width: 60%;
+  margin-bottom: 15%;
+  span {
+    color: #FBCC0B;
+  }
+}
+.avantage__swiper{
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 100%;
+}
+.swiper {
+  width: 80%;
+  height: 300px;
+}
+.swiper-wrapper{
+  width: 100%;
+  margin: 0 auto;
+  line-height: 2.7rem;
+  font-size: 1.3rem;
+}
+.swiper-slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avantage__box{
+  position: relative;
+}
+.avantage__connect {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  top: -25px;
+  left: -25px;
+  border-radius: 15px;
+  overflow: hidden;
+  img{
+    object-fit: none;
+  }
+}
+.avantage__btn {
+  position: absolute;
+  width: 70px;
+  height: 40px;
+  background-color: white;
+  bottom: -25px;
+  right: -25px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #20A471;
+  font-size: 0.8rem;
+  i{
+    color: #20A471;
+    cursor: pointer;
+  }
+}
+.avantage__pagination {
+  position: absolute;
+  width: 100px;
+  bottom: -30px;
+  left: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  font-size: 0.8rem;
+  img {
+    object-fit: none;
+  }
+}

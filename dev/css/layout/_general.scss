@@ -1,0 +1,19 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: $main__font;
+  background-color: #FFFAF7;
+}
+a{
+  text-decoration: none;
+}
+img{
+  width: 100%;
+  display: block;
+}
+.wrapper{
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}

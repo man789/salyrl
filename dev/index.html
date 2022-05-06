@@ -3,11 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/styles.min.css">
-  <title>Template Project</title>
+  <title>Template Salyrl Dev</title>
 </head>
 <body>
 
+<header class="header">
+  <div class="wrapper">
+    <div class="header__txt">
+      <h1 class="header__h1">
+        Des solutions solaires innovantes qui apportent à tous un <span>accès fiable à l'énergie</span>
+      </h1>
+      <p>
+        Aujourd'hui, plus de 590 millions de personnes en Afrique sub-saharienne n'ont pas accès à l'électricité. Nous avons
+        donc développé des systèmes solaires connectés, abordables et durables pour les ménages, les entreprises et les lieux
+        communautaires.
+      </p>
+      <a href="#" class="header__btn">Découvrez nos kits solaires</a>
+      <a href="#about" class="header__arrow"><i class="fa-solid fa-chevron-down"></i></a>
+    </div>
+    <div class="header__img">
+      <div>
+        <img src="img/header.png" alt="Image header">
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<nav class="nav__main">
+  <div class="wrapper">
+    <div>
+      <a href="#">Salyrl</a>
+    </div>
+    <div class="nav__links">
+      <a href="#" class="nav__link">Solutions</a>
+      <a href="#" class="nav__link">A propos</a>
+      <a href="#" class="nav__link">Impact</a>
+      <a href="#" class="nav__link">Actualités</a>
+      <a href="#" class="nav__link">FAQ</a>
+      <a href="#" class="nav__main__btn nav__link">Contact</a>
+      <a href="#" class="nav__link">FR</a>
+    </div>
+  </div>
+  <div>
+    <a href="#" class="burger__btn">Menu</a>
+  </div>
+</nav>
+
+<main class="main">
+  <section id="about" class="about">
+    <div class="wrapper">
+      <div class="about__img">
+        <img src="img/maison.png" alt="about image">
+      </div>
+      <div class="about__content">
+        <div class="about__content__img">
+          <img src="img/about.png" alt="about">
+        </div>
+        <div>
+          <h2 class="about__title">
+            Avancez dans la vie avec une solution adaptée <span>à vos besoins</span>
+          </h2>
+          <p class="about__txt">
+            Notre team Belgo-Camerounais, composé d'un réseau de techniciens et de commerciaux, est issu de toutes les régions du
+            Cameroun. Ensemble, nous sommes sortis des sentiers battus pour développer et distribuer des solutions adaptées aux
+            réalités du terrain et répondre ainsi à un besoin primordial.
+          </p>
+          <a href="#" class="about__btn">Notre Histoire</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="avantage">
+    <div class="wrapper">
+      <div class="avantage__content">
+        <h2 class="avantage__title">Les avantages des <span>solutions Solarly</span></h2>
+        <div class="avantage__box">
+          <div class="avantage__connect"><img src="img/connect.png" alt="connect"></div>
+          <div class="avantage__swiper">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">Connectée et intelligente, permettant un suivi à distance</div>
+                <div class="swiper-slide">Connectée et intelligente, permettant un suivi à distance</div>
+                <div class="swiper-slide">Connectée et intelligente, permettant un suivi à distance</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination avantage__pagination"></div>
+          <div class="avantage__btn">
+            <div class="swiper__prev"><i class="fa-solid fa-chevron-left"></i></div>
+            <div>|</div>
+            <div class="swiper__next"><i class="fa-solid fa-chevron-right"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="avantage__img">
+        <img src="img/avantage.png" alt="avantages">
+      </div>
+    </div>
+    <div class="wrapper">
+      <a href="#" class="green__btn">En Savoir Plus</a>
+    </div>
+  </section>
+</main>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/script.min.js"></script>
 </body>
 </html>
