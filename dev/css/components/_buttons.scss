@@ -8,6 +8,12 @@
   font-weight: 700;
   font-size: 0.8rem;
   margin: 10% 0;
+  border: 1px solid #FBCC0B;
+  transition: .3s all ease-in-out;
+  &:hover{
+    background-color: transparent;
+    color: #20A471;
+  }
 }
 .header__arrow {
   display: block;
@@ -22,6 +28,19 @@
   i{
     color: #20A471;
   }
+  border: 1px solid white;
+  transition: .3s all ease-in-out;
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid #20A471;
+    i{
+      color: black;
+    }
+  }
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
 }
 .nav__main__btn{
   display: block;
@@ -32,11 +51,24 @@
   width: fit-content;
   font-weight: 700;
   font-size: 0.8rem;
-  margin: 10% 0;
+
+  border: 1px solid #FBCC0B;
+  transition: .3s all ease-in-out;
+
+  &:hover {
+    background-color: transparent;
+    color: #20A471 !important;
+  }
 }
 .about__btn, .burger__btn {
   margin: 0;
 }
+@media screen and (max-width:768px) {
+  .about__btn {
+      margin: 0 auto;
+    }
+}
+
 .green__btn{
   display: block;
   background-color: #20A471;
@@ -46,4 +78,12 @@
   width: fit-content;
   font-weight: 700;
   font-size: 0.8rem;
+  border: 1px solid #20A471;
+  margin-top: 50px;
+  transition: .3s all ease-in-out;
+  &:hover {
+    background-color: transparent;
+    border: 1px solid #FBCC0B;
+    color: white;
+  }
 }

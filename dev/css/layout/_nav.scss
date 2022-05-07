@@ -1,0 +1,124 @@
+.nav__main{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FFFAF7;
+  z-index: 999;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  .wrapper{
+    display: flex;
+    align-items: center;
+    >div:nth-of-type(1) {
+      margin-right: auto;
+      padding: 1% 0;
+      a{
+        font-size: 1.7rem;
+        color: black;
+      }
+    }
+    > div:nth-of-type(2){
+      padding: 1% 2%;
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      a{
+        color: black;
+        transition: .3s all ease-in-out;
+        &:hover{
+          color: #FBCC0B;
+        }
+      }
+    }
+  }
+}
+.nav__responsive{
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .nav__responsive {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    z-index: 11111;
+    > div:nth-of-type(1){
+      display: flex;
+      align-items: center;
+      padding: 1%;
+      a:first-of-type{
+        margin-right: auto;
+        font-size: 1.7rem;
+        color: black;
+      }
+    }
+    .nav__links {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #FEF5CE;
+      a{
+        color: black;
+      }
+      .nav__lang{
+        display: flex;
+        gap: 1rem;
+        width: 25%;
+        margin-bottom: 16px;
+        a{
+          border: 1px solid #FBCC0B;
+          background-color: transparent;
+          padding: 8px;
+        }
+        .active__lang{
+          border: 1px solid #FBCC0B;
+            background-color: #FBCC0B;
+            padding: 8px;
+        }
+      }
+      > a{
+        border-top: 1px solid #FBCC0B;
+        padding: 8px 0;
+        width: 25%;
+        &:hover{
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+        &:hover:before {
+          content: '-';
+          color: #FBCC0B;
+          margin-right: 10px;
+        }
+      }
+      .active__link{
+        font-size: 1.5rem;
+        &::before{
+          content: '-';
+          color: #FBCC0B;
+          margin-right: 10px;
+        }
+      }
+      .nav__main__btn{
+        text-align: center;
+        &:hover::before{
+          content: '';
+          margin-right: 0;
+        }
+      }
+    }
+    .active{
+      display: flex;
+    }
+  }
+}

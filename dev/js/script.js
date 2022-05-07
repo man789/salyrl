@@ -2,19 +2,16 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
   },
-
   // Navigation arrows
   navigation: {
     nextEl: '.swiper__next',
     prevEl: '.swiper__prev',
   },
-
 });
 
 let burger_btn = document.querySelector('.burger__btn');
